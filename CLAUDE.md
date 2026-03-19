@@ -47,14 +47,24 @@ ai-test-todo/
 | Frontend Agent | .claude/agents/frontend.md | Vue 3 頁面、元件、store、api service |
 | Backend Agent | .claude/agents/backend.md | Hono 路由、middleware、JWT 驗證 |
 | DB Agent | .claude/agents/db.md | Prisma schema、migration、資料庫設計 |
+| QA Agent | .claude/agents/qa.md | Code 品質檢查、邏輯驗證、Playwright E2E 測試 |
 
 ## 開發流程
 
-1. 使用者提出需求 → PM Agent 拆解成任務
-2. PM Agent 派工給對應的 agent
-3. DB Agent 先處理 schema
-4. Backend Agent 建立 API
-5. Frontend Agent 建立頁面串接 API
+### 分支策略
+- main：穩定版本，只接受來自 dev 的 merge
+- dev：開發主線
+- feature/*：各功能分支，開發完 merge 回 dev
+
+### 功能開發流程
+1. 從 dev 建立 feature/* 分支
+2. PM Agent 拆解需求，依序派工給 DB → Backend → Frontend Agent
+3. 功能完成後，QA Agent 執行：
+   - Code 品質檢查
+   - 功能邏輯驗證
+   - Playwright E2E 測試
+4. QA 全部通過後 merge 回 dev
+5. dev 測試穩定後 merge 到 main
 
 ## Skills
 
