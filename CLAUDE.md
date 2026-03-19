@@ -15,6 +15,37 @@ A note-taking web application built with AI assistance, covering full-stack deve
 | ORM | Prisma |
 | Authentication | JWT (httpOnly cookies) |
 
+## 環境需求
+
+| 項目 | 版本 |
+|------|------|
+| Node.js | 24.14.0 LTS (Krypton) |
+| npm | 11.9.0 |
+
+> 專案根目錄有 `.node-version` 檔案，記錄所需的 Node.js 版本。
+> 進入專案後在 `frontend/` 或 `backend/` 目錄下執行 `npm run switch:node`，可透過 nvs auto 自動切換到正確版本。
+
+### Frontend 主要套件
+| 套件 | 版本 |
+|------|------|
+| vue | ^3.3.4 |
+| vuetify | ^3.12.3 |
+| pinia | ^3.0.4 |
+| vue-router | ^4.6.4 |
+| axios | ^1.13.6 |
+| vite | ^4.4.5 |
+| typescript | ^5.0.2 |
+
+### Backend 主要套件
+| 套件 | 版本 |
+|------|------|
+| hono | ^4.12.8 |
+| @hono/node-server | ^1.12.0 |
+| @prisma/client | ^5.22.0 |
+| jose | ^6.2.2 |
+| typescript | ^5.9.3 |
+| ts-node | ^10.9.2 |
+
 ## Directory Layout
 ```
 ai-test-todo/

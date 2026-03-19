@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(npm init:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"import\\(''eslint-plugin-vue''\\).then\\(m => console.log\\(Object.keys\\(m.default.configs\\)\\)\\)\")",
+      "Bash(nvs add:*)",
+      "Bash(nvs --version)",
+      "Bash(nvs ls-remote:*)",
+      "Bash(nvs ls:*)",
+      "Bash(nvs use:*)",
+      "Bash(echo $NVS_HOME)",
+      "Read(//d/專案/ai-test-todo/$NVS_HOME/node/24.14.0/**)",
+      "Bash(NODE_PATH=\"C:/Users/User/AppData/Local/nvs/node/24.14.0/x64\")",
+      "Bash(PATH=\"$NODE_PATH:$PATH\" node --version)",
+      "Bash(PATH=\"$NODE_PATH:$PATH\" npm --version)",
+      "Bash(\"C:/Users/User/AppData/Local/nvs/node/24.14.0/x64/node.exe\" --version)",
+      "Bash(\"C:/Users/User/AppData/Local/nvs/node/24.14.0/x64/npm\" --version)",
+      "Bash(\"C:/Users/User/AppData/Local/nvs/node/24.14.0/x64/npm\" install:*)"
+    ]
+  }
+}
