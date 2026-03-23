@@ -11,7 +11,7 @@
 
 ## Code Quality
 - ESLint + Prettier 強制格式
-- commit 前必須執行 `npm run lint`
+- commit 前必須執行 `yarn lint`
 
 ## Directory Structure
 ```
